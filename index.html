@@ -73,6 +73,7 @@
   /* FADE ANIM */
   .fade-up { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
   .fade-up.vis { opacity: 1; transform: none; }
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.2} }
   .fade-up.d1 { transition-delay: 0.1s; }
   .fade-up.d2 { transition-delay: 0.2s; }
   .fade-up.d3 { transition-delay: 0.3s; }
@@ -370,8 +371,19 @@
       <!-- Project 1 -->
       <div class="proj-card">
         <div class="proj-top">
-          <div class="proj-ico">&#127807;</div>
+          <div class="proj-ico">&#9889;</div>
           <span class="proj-idx">PROJECT 01</span>
+        </div>
+        <h3 class="proj-title">MICROBIAL ELECTROCHEMICAL CELL</h3>
+        <p class="proj-tag">Lab Research · Bioelectrochemistry</p>
+        <p class="proj-desc">Designed and operated a Microbial Electrochemical Cell (MEC) to study bioelectrogenesis using hydrogen-producing microbial strains. Monitored gas concentration and purity via GC, tracked growth kinetics, and analysed bioenergy output. A hands-on exploration of clean energy generation through microbial metabolism.</p>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="proj-card">
+        <div class="proj-top">
+          <div class="proj-ico">&#127807;</div>
+          <span class="proj-idx">PROJECT 02</span>
         </div>
         <h3 class="proj-title">BIOFEED FROM FOOD WASTE</h3>
         <p class="proj-tag">KSCST Funded · 47th SPP Series</p>
@@ -382,11 +394,11 @@
         </a>
       </div>
 
-      <!-- Project 2 -->
+      <!-- Project 3 -->
       <div class="proj-card">
         <div class="proj-top">
           <div class="proj-ico">&#129514;</div>
-          <span class="proj-idx">PROJECT 02</span>
+          <span class="proj-idx">PROJECT 03</span>
         </div>
         <h3 class="proj-title">MOLECULAR DOCKING STUDY</h3>
         <p class="proj-tag">Mini Project · Bioinformatics</p>
@@ -397,25 +409,18 @@
         </a>
       </div>
 
-      <!-- Project 3 -->
+      <!-- Project 4 -->
       <div class="proj-card">
         <div class="proj-top">
-          <div class="proj-ico">&#129302;</div>
-          <span class="proj-idx">PROJECT 03</span>
+          <div class="proj-ico" style="opacity:0.5">&#129302;</div>
+          <span class="proj-idx" style="color:#7effa0">ONGOING</span>
         </div>
-        <h3 class="proj-title">AI + BIO CONCEPTS</h3>
-        <p class="proj-desc">Using AI tools to boost productivity, upskill, and build creative ideas at the intersection of life science and technology. From AI-assisted literature reviews to building small bio-focused mini projects that explore what is possible.</p>
-             </div>
-
-      <!-- Coming soon -->
-      <div class="proj-card" style="opacity:0.42">
-        <div class="proj-top">
-          <div class="proj-ico">&#9889;</div>
-          <span class="proj-idx">COMING SOON</span>
-        </div>
-        <h3 class="proj-title">NEXT PROJECT</h3>
-        <p class="proj-desc">Currently in development. Building at the intersection of biology and technology. Watch this space.</p>
-        <span class="proj-link" style="cursor:default;pointer-events:none">IN PROGRESS</span>
+        <h3 class="proj-title" style="opacity:0.5">AI + BIO CONCEPTS</h3>
+        <p class="proj-desc" style="opacity:0.4">Using AI tools to boost productivity, upskill, and build creative ideas at the intersection of life science and technology. From AI-assisted literature reviews to building small bio-focused mini projects that explore what is possible.</p>
+        <span style="display:inline-flex;align-items:center;gap:8px;font-family:monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#7effa0;margin-top:8px;">
+          <span style="width:7px;height:7px;background:#7effa0;border-radius:50%;animation:blink 1.4s ease-in-out infinite;"></span>
+          In Progress
+        </span>
       </div>
     </div>
   </div>
@@ -561,7 +566,7 @@
     <p class="contact-desc fade-up">Open to opportunities, collaborations, and innovative projects at the intersection of biology and technology.</p>
 
     <div class="contact-btns fade-up">
-      <a href="mailto:souvikbhunia@gmail.com" class="btn-fill">Send Email</a>
+      <a href="/cdn-cgi/l/email-protection#cdbea2b8bba4a6afa5b8a3a4ac8daaa0aca4a1e3aea2a0" class="btn-fill">Send Email</a>
       <a href="https://www.linkedin.com/in/souvik-bhunia" target="_blank" class="btn-outline">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>
         LinkedIn
@@ -601,7 +606,7 @@
     <a href="https://www.linkedin.com/in/souvik-bhunia" target="_blank" class="ft-ico" title="LinkedIn">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>
     </a>
-    <a href="mailto:souvikbhunia@gmail.com" class="ft-ico" title="Email">
+    <a href="/cdn-cgi/l/email-protection#cdbea2b8bba4a6afa5b8a3a4ac8daaa0aca4a1e3aea2a0" class="ft-ico" title="Email">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
     </a>
     <a href="https://x.com/iamsouvikbhunia" target="_blank" class="ft-ico" title="X (Twitter)">
@@ -614,7 +619,7 @@
   <div class="ft-copy">2026 // All Rights Reserved.</div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   var observer = new IntersectionObserver(function(entries) {
     entries.forEach(function(e) {
       if (e.isIntersecting) { e.target.classList.add('vis'); observer.unobserve(e.target); }
